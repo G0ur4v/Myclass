@@ -116,7 +116,7 @@
           android:layout_height="wrap_content"
           android:layout_centerHorizontal="true"
           android:layout_below="@+id/email"
-          android:text="User name/Email address"
+          android:text="Password"
           android:layout_marginTop="5dp"
           />
       <EditText
