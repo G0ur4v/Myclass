@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@color/yellow"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:id="@+id/label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="monospace"
+            android:text="Payment (Admin)"
+            android:textColor="@color/red"
+            android:textSize="30sp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etcontainer"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Customer Name"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:textColor="@color/red"
+                android:inputType="textPersonName"
+                android:textSize="24sp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/checkcontainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etcontainer"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="monospace"
+                android:text="Select Items"
+                android:textColor="@color/red"
+                android:textSize="24sp"
+                />
+            <CheckBox
+                android:id="@+id/item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item1"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+                />
+            <CheckBox
+                android:id="@+id/item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item2"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+                />
+            <CheckBox
+                android:id="@+id/item3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item3"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+                />
+            <CheckBox
+                android:id="@+id/item4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item4"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+                />
+            <CheckBox
+                android:id="@+id/item5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item5"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/pmethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:fontFamily="monospace"
+            android:text="Payment Method"
+            android:textColor="@color/red"
+            android:textSize="24sp"
+            android:layout_below="@id/checkcontainer"
+            />
+        <RadioGroup
+            android:id="@+id/radiocontainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pmethod"
+
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            >
+            <RadioButton
+                android:id="@+id/cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+                android:layout_marginRight="5dp"
+                />
+            <RadioButton
+                android:id="@+id/card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit/Debit card"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+                android:layout_marginRight="5dp"
+                />
+            <RadioButton
+                android:id="@+id/upi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPI"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+                />
+
+
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radiocontainer"
+            android:text="Create Reciept"
+            android:layout_centerHorizontal="true"
+            app:cornerRadius="4dp"
+            android:elevation="10dp"
+            android:textSize="18sp"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+    </RelativeLayout>
+</ScrollView>
+
